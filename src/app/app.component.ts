@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ConversorUnidades';
+  public metros = 0;
+  public gonzalos = 0;
+
+  public metrosGonzalos() {
+    console.log('M a Gon');
+    this.gonzalos = this.metros / 1.75;
+  }
+
+  public gonzalosMetros() {
+    console.log('Gon a M');
+    this.metros = this.gonzalos * 1.75;
+  }
 }
